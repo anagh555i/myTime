@@ -1,0 +1,106 @@
+.background{
+    padding: 50px;
+    background-color: var(--backgroundcolor);
+    /* align-items: center; */
+    /* justify-content: center; */
+    overflow-x: scroll;
+    overflow-y: scroll;
+    font-weight: 500;
+}
+
+.code{
+    background-color: rgb(70, 70, 70);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.table{
+    background-color: var(--tablecolor);
+    padding: 5px;
+    width: fit-content;
+    border-radius:var(--borderradius);
+}
+
+.lab{
+    border:solid rgb(249, 255, 170);
+    border-width: var(--borderweight);
+    border-color: var(--bordercolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: var(--margin); 
+    border-radius:var(--borderradius);
+    padding: 10px;
+    color: var(--slotcolor);
+}
+.slot{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 5px; */
+    margin: var(--margin);
+    width: 80px;
+    height:40px;
+    border: solid rgb(249, 255, 170);
+    border-width: var(--borderweight);
+    border-radius:var(--borderradius);
+    border-color: var(--bordercolor);
+    color: var(--slotcolor);
+}
+.day{
+    background-color: var(--headcolor);
+    color: var(--headertext);
+}
+.days{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Lunch{
+    background-color: var(--lunchcolor);
+    color: var(--headertext);
+}
+.A,.Aplus{
+    background-color: var(--Acolor);
+}
+.B,.Bplus{
+    background-color: var(--Bcolor);
+}
+.C,.Cplus{
+    background-color: var(--Ccolor);
+}
+.D,.Dplus{
+    background-color: var(--Dcolor);
+}
+.E,.Eplus{
+    background-color: var(--Ecolor);
+}
+.F,.Fplus{
+    background-color: var(--Fcolor);
+}
+.G{
+    background-color: var(--Gcolor);
+}
+.H{
+    background-color: var(--Hcolor);
+}
+.P{
+    background-color: var(--Pcolor);
+}
+.Q{
+    background-color: var(--Qcolor);
+}
+.R{
+    background-color: var(--Rcolor);
+}
+.S{
+    background-color: var(--Scolor);
+}
+.T{
+    background-color: var(--Tcolor);
+}

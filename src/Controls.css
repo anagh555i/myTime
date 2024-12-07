@@ -1,0 +1,96 @@
+.controls{
+    background-color: #e57f84;
+    padding: 20px;
+    display: flex;
+    /* overflow: hidden; */
+    overflow-x: auto;
+    scroll-snap-type:mandatory;
+    scroll-behavior: smooth;
+}
+h3{
+    margin: 0px;
+}
+
+.controlcells{
+    margin: 10px;
+    width: 270px;
+    min-width: 200px;
+    flex-shrink: 0;
+    height: 200px;
+    background-color: #f4eae6;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #e57f84;
+}
+.slotcontrol{
+    padding: 20px;
+}
+.controlcells button{
+    margin: 10px;
+    color: #e57f84;
+    background-color:inherit;
+}
+
+.me{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.me .horiz{
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.cc3 h3{
+    padding-left: 5px;
+}
+.cc4 h3{
+    padding-left: 5px;
+}
+.colorchanger{
+    padding-top: 10px;
+    padding-right: 6px;
+}
+.colorchanger h3{
+    flex: 1;
+}
+
+.toggle{
+    width: 55px;
+    height:30px;
+    padding: 3px;
+    box-shadow: inset 0px 0px 5px 0.5px #4297a0;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+}
+.circle{
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    background-color: #e57f84;
+}
+
+.rangeinput{
+    appearance: none;
+    background: linear-gradient(90deg,#e57f84,#920007);
+    box-shadow: inset 0px 0px 5px 1px rgb(143, 87, 87);
+    height: 30px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.rangeinput::-webkit-slider-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #f4eae6;
+}
+
+@media (min-width:1350px) {
+    .controls{
+        justify-content: center;
+    }
+}

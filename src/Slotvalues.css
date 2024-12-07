@@ -1,0 +1,20 @@
+.slotvalues{
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.slotpar{
+    background-color: #4297a0;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    width: 330px;
+}
+.slotpar input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #f4eae6;
+    padding: 5px;
+    color: #2f5061;
+}

@@ -1,0 +1,61 @@
+.info{
+    padding: 50px;
+    padding-bottom: 190px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info h1{
+    color: #2f5061;
+    font-size: 4rem;
+}
+.info h3{
+    color: #4297a0;
+}
+
+.cell{
+    margin: 10px;
+    width: 100px;
+    height: 90px;
+    border-radius: 10px;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.c1{
+    animation-delay: 1s;
+}
+.c2{
+    animation-delay: 3s;
+}
+.c3{
+    animation-delay: 6s;
+}
+.c4{
+    animation-delay: 9s;
+}
+
+@keyframes colorchange {
+    0% {background-color: #4297a0;}
+    50% {background-color: #2f5061;}
+    100% {background-color: #4297a0;}
+  }
+
+.squares{
+    padding: 50px;
+}
+/*
+Teal Green
+#4297a0
+
+Ivory
+#f4eae6
+
+Coral
+#e57f84
+
+Misty Blue
+#2f5061
+*/
