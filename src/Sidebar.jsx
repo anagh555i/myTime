@@ -6,9 +6,9 @@ function Sidebar(props){
         width:`${(props.moretab)?"100px":"0px"}`,
         padding:`${(props.moretab)?"20px":"0px"}`
     }}>
-        <h3>Info</h3><br />
-        <h3>Guide</h3><br />
-        <h3>Message</h3>
+        <h3>----------</h3><br />
+        <h3>----------</h3><br />
+        <h3>----------</h3>
     </div>);
 }
 

@@ -12,7 +12,9 @@ function Header(props){
             <img src={more} alt="" />
         </div>
         <h2 className="title">MyTime</h2>
-        <button className="login">A</button>
+        <button className="login">--
+            <p>*Anonymous</p>
+        </button>
     </div>
     </>
 }

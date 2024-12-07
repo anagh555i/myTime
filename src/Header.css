@@ -28,6 +28,16 @@ button.login{
     height:40px;
     width: 40px;
 }
+button.login p{
+    position:absolute;
+    display: none;
+    /* background-color: yellow; */
+    color: #e57f84;
+    transform: translateX(-60px);
+}
+button.login:hover p{
+    display:block;
+}
 
 img{
     transition: ease 0.6s;

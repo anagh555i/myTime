@@ -41,7 +41,20 @@
     0% {background-color: #4297a0;}
     50% {background-color: #2f5061;}
     100% {background-color: #4297a0;}
-  }
+}
+
+@media (max-width:630px) {
+    .squares{
+        display: none;
+    }
+    .info h1{
+        font-size: 3rem;
+    }
+    .info h3{
+        font-size: 1rem;
+    }
+
+}
 
 .squares{
     padding: 50px;
