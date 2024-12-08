@@ -1,8 +1,11 @@
-# React + Vite
+myTime
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+myTime is a sleek, user-friendly time table maker tailored exclusively for NIT Calicut schedules (for now). It allows you to customize your timetable to fit your needs and download it as an image.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+● Customizable Time Table: Add and arrange your classes, labs, and activities with ease.
+
+● Exclusive to NIT Calicut: Preloaded with NITC-specific time slots and formats.
+
+● Downloadable Image: Export your timetable as a crisp, shareable image.
