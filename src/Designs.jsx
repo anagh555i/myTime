@@ -1,3 +1,5 @@
+import down from './assets/down.svg';
+
 function Designs(props){
     const cssVar=["--margin","--borderweight","--borderradius","--slotcolor","--lunchcolor","--tablecolor","--headcolor","--backgroundcolor",
                       "--bordercolor","--headertext","--Acolor","--Bcolor",
@@ -17,7 +19,7 @@ function Designs(props){
     }
     return <div className="designs">
         <div className="dropmenu">
-            <h3>Quick Layouts ^-^</h3>
+            <button className='horiz'><h3>Quick Layouts</h3> <img src={down} alt="" style={{width:"15px"}}/> </button>
             <div className="options">
                 <button onClick={()=>{
                     setDesign("0px1px0px#042748#d1d1d1#696b7b#d1d1d1#000000#918c83#737373#618ebb#f0bdd0#fcf4e3#35e381#e1dd66#ff4d8b#ffa424d7e14#2#405d7d#70384c#00941e#c79c00#004ac2");

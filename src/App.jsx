@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState ,useEffect} from 'react'
 import './App.css'
 import Header from './Header.jsx'
 import Sidebar from './Sidebar.jsx'
@@ -29,6 +29,29 @@ function App() {
       return acc+rootstyle.getPropertyValue(it);
     }));
   }
+  
+  const [temp,...cssVar]=cssVariables;
+  function generateDesign(stylecode){
+    if(stylecode.length!=149){
+        console.error("Invalid code");
+        return;
+    }
+    let values=[stylecode.substring(0,3),stylecode.substring(3,6),stylecode.substring(6,9)];
+    let i=9
+    for(;i<149;i+=7){
+        values.push(stylecode.substring(i,i+7));
+    }
+    i=0;
+    cssVar.forEach(el=>{
+        document.documentElement.style.setProperty(el,`${values[i++]}`);
+    });
+    setcode();
+  }
+
+  useEffect(()=>{
+    console.log("useeffect");
+    generateDesign("3px0px7px#ffffff#ff0000#474747#999999#000000#808080#ffffff#0044b3#750000#55ccce#1bb14f#9e23af#fe9090#f7b8ff#a9befe#479a8c#51bd42#bdc733#cc7228#f23a3a");
+  },[]);
 
   return (
     <div className='horiz' style={{
@@ -46,7 +69,7 @@ function App() {
         <Designs setcode={setcode}></Designs>
         <Timetable slot={slot} mextra={mextra} eextra={eextra} code={code}></Timetable>
         <Slotvalues setcode={setcode}></Slotvalues>
-        <Codeparse cssVariables={cssVariables} setcode={setcode}></Codeparse>
+        <Codeparse generateDesign={generateDesign}></Codeparse>
         <Download></Download>
       </div>
     </div>

@@ -45,11 +45,19 @@
 }
 
 .designs{
-  background-color: #2f5061;
-  padding: 5px 0px 5px 3.5%;
+  background-color:var(--backgroundcolor);
+  padding: 20px 0px 5px 3.5%;
 }
 .dropmenu{
   width: fit-content;
+}
+.dropmenu button{
+  background-color: #4297a0;
+  outline: none;
+  border: none;
+  box-shadow:1px 1px 5px 1px #2f5061;
+  gap: 5px;
+  align-items: center;
 }
 .dropmenu:hover .options{
   display:flex;
