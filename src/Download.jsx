@@ -9,7 +9,7 @@ function Download(){
         const el=document.getElementById("TimeTable");
         document.getElementById("TimeTable").style.alignItems="center";
         document.getElementById("table").style.margin="100px 0px 100px 0px";
-        document.documentElement.style.setProperty("--canvassize",`${el.offsetWidth}px`);
+        document.documentElement.style.setProperty("--canvassize",`1500px`);
         const canvas= await html2canvas(el);
         document.getElementById("TimeTable").style.alignItems="flex-start";
         document.getElementById("table").style.margin="0px";
