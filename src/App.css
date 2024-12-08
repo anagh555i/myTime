@@ -28,7 +28,7 @@
   background-color: #cb2e39;
 }
 
-.html2canvas-container { width: 1500px !important;}  /* FOR THE CANVAS TO SCAN ENTIRE WIDTH OF TT*/
+.html2canvas-container { width: var(--canvassize) !important;}  /* FOR THE CANVAS TO SCAN ENTIRE WIDTH OF TT*/
 
 .download{
   background-color: #e57f84;

@@ -1,6 +1,5 @@
 import './Header.css'
 import more from './assets/bars-solid.svg'
-import cross from './assets/x-solid.svg'
 
 function Header(props){
     return<>

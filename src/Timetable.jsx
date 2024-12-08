@@ -6,6 +6,7 @@ import Plusslots from './Plusslots.jsx'
 import Labs from './Labs.jsx'
 import Days from './Days.jsx'
 import Eveningextra from './Eveningextra.jsx'
+import copy from './assets/copy.svg'
 
 function Timetable(props){
     let num=1+(props.mextra?1:0);
@@ -24,7 +25,23 @@ function Timetable(props){
         {props.eextra?<Eveningextra num={num+7}></Eveningextra>:null}
     </div>
     <br />
-    <div className="code">{props.code}</div>
+    <div className="code horiz" style={{gap:"10px",alignItems:"center"}}>
+        <button onClick={(e)=>{
+            navigator.clipboard.writeText(props.code);
+            const copied=document.getElementById("copied");
+            copied.innerText="Copied to clipboard";
+            copied.style.color="grey";
+            setTimeout(()=>{copied.style.color="transparent";},500);
+            setTimeout(()=>{copied.innerText="";},1000);
+        }} style={{padding:"10px"}}> <img src={copy} alt="copy" style={{width:"25px"}}/> </button>
+        {props.code}
+    </div>
+    <div id="copied" style={{
+        paddingTop:"10px",
+        transition:"ease,0.25s",
+        color:"transparent",
+        height:"0px"
+    }}></div>
     </div>
     </>
 }

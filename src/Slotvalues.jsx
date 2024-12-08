@@ -14,7 +14,7 @@ function Slotvalues(props){
             <input type="color" name="" id="" onChange={(e)=>{
                 document.documentElement.style.setProperty(`--${s}color`,`${e.target.value}`);
                 props.setcode();
-            }}/>
+            }} style={{padding:"0px",borderRadius:"5px"}}/>
         </div> );
     })
     return <>
